@@ -4,13 +4,23 @@ A restful api to serve the purpose for fetching data from github.
 
 ## Tech/framework used
 
-     Python==3.8.5
+     python==3.8
+     asgiref==3.3.1
+     certifi==2020.11.8
+     chardet==3.0.4
      Django==3.1.3
+     django-environ==0.4.5
      django-rest-framework==0.1.0
      djangorestframework==3.12.2
-     django-environ==0.4.5
+     idna==2.10
+     python-dotenv==0.15.0
+     pytz==2020.4
+     requests==2.24.0
+     sqlparse==0.4.1
+     urllib3==1.25.11
 
-# RestApi is hosted at:- http://pallavagarwal.pythonanywhere.com/api/commit/{org}/n/m/
+# RestApi is hosted at:
+http://pallavagarwal.pythonanywhere.com/api/commit/{org}/n/m/
 
 In depth overview:
 
