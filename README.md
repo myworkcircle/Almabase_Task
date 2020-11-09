@@ -10,6 +10,7 @@ A restful api to serve the purpose for fetching data from github.
      djangorestframework==3.12.2
      django-environ==0.4.5
 
+# RestApi is hosted at:- http://pallavagarwal.pythonanywhere.com/api/commit/{org}/n/m/
 
 In depth overview:
 
