@@ -32,7 +32,7 @@ Get request for the list of members and their respective activity periods.
 
 **Response:
 
-https://drive.google.com/file/d/1w5Aq6drVotzQFMHabM6y2-JKDXfp7XCz/view?usp=sharing
+![Screenshot](microsft.png)
     
     response starts with the organizaiton name then commiteees name with their commit counts
     
