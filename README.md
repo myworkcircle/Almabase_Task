@@ -20,9 +20,9 @@ A restful api to serve the purpose for fetching data from github.
      urllib3==1.25.11
 
 # RestApi is hosted at:
-http://pallavagarwal.pythonanywhere.com/api/commit/{org}/n/m/
+http://pallavagarwal.pythonanywhere.com/api/commit/google/1/1/
 
-In depth overview:
+# In depth overview:
 
 This Django project consists of one App:
 
@@ -43,72 +43,21 @@ Get request for the list of members and their respective activity periods.
     
 
     {
-        "microsoft": {
-            "vscode": {
-                "bpasero": 8569,
-                "jrieken": 6678,
-                "joaomoreno": 6457,
-                "mjbvz": 5334,
-                "isidorn": 4903,
-                "sandy081": 4814,
-                "alexdima": 4671,
-                "Tyriar": 3119,
-                "aeschli": 2982,
-                "roblourens": 2667,
-                "rebornix": 2162,
-                "weinand": 1024,
-                "chrmarti": 984,
-                "alexr00": 967,
-                "sbatten": 888,
-                "dbaeumer": 775,
-                "ramya-rao-a": 757
-            },
-            "TypeScript": {
-                "ahejlsberg": 2911,
-                "sheetalkamat": 1899,
-                "andy-ms": 1707,
-                "sandersn": 1626,
-                "DanielRosenwasser": 1608,
-                "mhegazy": 1324,
-                "weswigham": 1271,
-                "rbuckton": 1083,
-                "vladima": 1022,
-                "CyrusNajmabadi": 958,
-                "RyanCavanaugh": 596,
-                "JsonFreeman": 498,
-                "csigs": 493,
-                "a-tarasyuk": 313,
-                "amcasey": 309,
-                "andrewbranch": 278,
-                "typescript-bot": 240
-            },
-            "Windows-universal-samples": {
-                "oldnewthing": 79,
-                "ontx": 1,
-                "supratiksen": 1,
-                "turolla": 1
-            },
-            "terminal": {
-                "DHowett": 327,
-                "zadjii-msft": 273,
-                "miniksa": 208,
-                "carlos-zamora": 117,
-                "j4james": 67,
-                "cinnamon-msft": 49,
-                "leonMSFT": 35,
-                "skyline75489": 30,
-                "PankajBhojwani": 22,
-                "lhecker": 20,
-                "bitcrazed": 17,
-                "greg904": 14,
-                "mkitzan": 12,
-                "waf": 12,
-                "ZoeyR": 11,
-                "jsoref": 10,
-                "metathinker": 10
-            },
-
-}
+        "google": {
+        
+             "it-cert-automation-practice": {
+                 "marga-google": 3,
+                 "margamanterola": 1
+             },
+             "styleguide": {
+                 "IsaacG": 15,
+                 "tonyruscoe": 10
+             },
+             "guava": {
+                 "cpovirk": 1420,
+                 "kluever": 563
+             }
+    }
 
 
 # Hosting locally:
