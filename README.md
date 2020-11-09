@@ -107,29 +107,22 @@ Get request for the list of members and their respective activity periods.
 }
 
 
-Hosting locally:
+# Hosting locally:
 
-Step-1: Clone the repo to your system.
+     Step-1: Clone the repo to your system.
 
-Step-2: run $ virtualenv -p python env (or virtualenv -p python3 env , depending on system settings for python)
+     Step-2: run $ virtualenv -p python env (or virtualenv -p python3 env , depending on system settings for python)
 
-Step-3: run $ pip install -r requirements.txt 
+     Step-3: run $ pip install -r requirements.txt 
 
-Make sure DEBUG is True for running locally.
+     Make sure DEBUG is True for running locally.
 
-Step-7 Run command: python manage.py makemigrations
+     Step-7 Run command: python manage.py makemigrations
 
-Step-8 Run command: python manage.py migrate
+     Step-8 Run command: python manage.py migrate
 
-Step-9 Run command: python manage.py populate 10
+     Step-10 Run command: python manage.py runserver
 
-Step-10 Run command: python manage.py runserver
-
-Steps for Cloud services in this case hosted on PythonAnywhere
-
-    Make sure DEBUG is False
-    ALLOWED_HOST is configured according to usecase
-    command: python manage.py collectstatic for collecting all the static files in the folder mentioned in STATIC_ROOT
 
 # API View
 
