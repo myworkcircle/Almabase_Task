@@ -77,11 +77,11 @@ Get request for the list of members and their respective activity periods.
 
      Make sure DEBUG is True for running locally.
      
-   #  step-5: create a file with name ".env" in the root directory
-   ##           if you have a github personal access token then add two variable inside .env file
+   ##  step-5: create a file with name ".env" in the root directory
+   ###           if you have a github personal access token then add two variable inside .env file
               1. username={your_github_usrname}
               2. github_token={your_personal_acess_token}
-   ## else
+   ### else
           Remove the headers parameter from the api call
           
      Step-6 Run command: python manage.py makemigrations
