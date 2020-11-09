@@ -20,7 +20,11 @@ A restful api to serve the purpose for fetching data from github.
      urllib3==1.25.11
 
 # RestApi is hosted at:
-http://pallavagarwal.pythonanywhere.com/api/commit/google/1/1/
+http://pallavagarwal.pythonanywhere.com/api/commit/{org}/{n}/{m}/
+
+{org} = organization name
+{n} = count of repositories to be entered
+{m} = count of commitees required
 
 # In depth overview:
 
@@ -39,7 +43,7 @@ Get request for the list of members and their respective activity periods.
 ![microsoft](https://user-images.githubusercontent.com/36321155/98555500-05244a00-22c8-11eb-839b-539e1e974e6c.png)
 
     
-    response starts with the organizaiton name then commiteees name with their commit counts
+    response starts with the organizaiton name containing repository names containing commitee names and their commit counts
     
 
     {
