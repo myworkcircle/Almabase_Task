@@ -11,13 +11,6 @@ A restful api to serve the purpose for fetching data from github.
      django-environ==0.4.5
 
 
-
-
-
-## Currently Hosted at PythonAnywhere server: http://pallavagarwal.pythonanywhere.com/fetch/
-
-
-
 In depth overview:
 
 This Django project consists of one App:
@@ -116,13 +109,19 @@ Get request for the list of members and their respective activity periods.
      Step-3: run $ pip install -r requirements.txt 
 
      Make sure DEBUG is True for running locally.
-
+     
+     step-4: create a .env file in the root directory and inside .env
+              if you have a github personal access token then add two variable inside .env file
+              1. username={your_github_usrname}
+              2. github_token={your_personal_acess_token}
+              
      Step-7 Run command: python manage.py makemigrations
 
      Step-8 Run command: python manage.py migrate
 
      Step-10 Run command: python manage.py runserver
 
+     step-11 In the url bar enter url localhost:8000/api/commit/{org}/n/m
 
 # API View
 
