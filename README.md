@@ -67,25 +67,30 @@ Get request for the list of members and their respective activity periods.
 # Hosting locally:
 
      Step-1: Clone the repo to your system.
+     
+     Step-2: sudo apt install virtualenv
+     
+     # creating virtual environemnt for the project
+     Step-3: $ virtualenv -p python env (or virtualenv -p python3 env , depending on system settings for python)
 
-     Step-2: run $ virtualenv -p python env (or virtualenv -p python3 env , depending on system settings for python)
-
-     Step-3: run $ pip install -r requirements.txt 
+     Step-4: run $ pip install -r requirements.txt 
 
      Make sure DEBUG is True for running locally.
      
-     step-4: create a .env file in the root directory and inside .env
-              if you have a github personal access token then add two variable inside .env file
+   #  step-5: create a file with name ".env" in the root directory
+   ##           if you have a github personal access token then add two variable inside .env file
               1. username={your_github_usrname}
               2. github_token={your_personal_acess_token}
-              
-     Step-7 Run command: python manage.py makemigrations
+   ## else
+          Remove the headers parameter from the api call
+          
+     Step-6 Run command: python manage.py makemigrations
 
-     Step-8 Run command: python manage.py migrate
+     Step-7 Run command: python manage.py migrate
 
-     Step-10 Run command: python manage.py runserver
+     Step-8 Run command: python manage.py runserver
 
-     step-11 In the url bar enter url localhost:8000/api/commit/{org}/n/m
+     step-9 In the url bar enter url example: localhost:8000/api/commit/google/3/2
 
 # API View
 
@@ -97,6 +102,11 @@ def commitDetails(request, organization, countOfRepos, countOfCommitees):
     
     here countOfRepos=n and countOfCommitees=m
     #..
+    
+    
+# Important Points:
+
+I have removed .env file as it contains sensitive data for accessing the api.
         
        
 
