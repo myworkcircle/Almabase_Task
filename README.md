@@ -32,7 +32,8 @@ Get request for the list of members and their respective activity periods.
 
 **Response:
 
-![Screenshot](microsft.png)
+![microsoft](https://user-images.githubusercontent.com/36321155/98555500-05244a00-22c8-11eb-839b-539e1e974e6c.png)
+
     
     response starts with the organizaiton name then commiteees name with their commit counts
     
