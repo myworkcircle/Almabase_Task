@@ -77,12 +77,18 @@ Get request for the list of members and their respective activity periods.
 
      Make sure DEBUG is True for running locally.
      
-    Step-5: create a file with name ".env" in the root directory
+    Step-5:
    ###  if you have a github personal access token then add two variable inside .env file
-              1. username={your_github_usrname}
-              2. github_token={your_personal_acess_token}
+              1. create a file with name ".env" in the root directory
+              2. username={your_github_usrname}
+              3. github_token={your_personal_acess_token}
    ### else
           Remove the headers parameter from the api call
+          
+          ## code snippet
+          repositoryData = requests.get(forksUrl,headers=headers).json()
+          change it to
+          repositoryData = requests.get(forksUrl).json()
           
      Step-6 Run command: python manage.py makemigrations
 
@@ -106,7 +112,7 @@ def commitDetails(request, organization, countOfRepos, countOfCommitees):
     
 # Important Points:
 
-I have removed .env file as it contains sensitive data for accessing the api.
+I have removed .env file as it contains sensitive data for accessing the api. Storing sensitive information in environment variables
         
        
 
