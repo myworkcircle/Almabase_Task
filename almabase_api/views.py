@@ -9,8 +9,8 @@ env = environ.Env()
 # reading .env file
 environ.Env.read_env()
 
-github_token = env("github_token")
-username = env("username")
+github_token = os.getenv("github_token")
+username = os.getenv("username")
 
 headers = {
             "Accept": "application/vnd.github.v3+json",
@@ -29,10 +29,8 @@ def commitDetails(request, organization, countOfRepos, countOfCommitees):
     organizationRepositories = repositoryData["items"]
 
     output = {}
-
-    # # raising error when input countOfRepos is more than the original number of repository of organization
-    # if countOfRepos > len(organizationRepositories):
-    #     raise NotFound("Input countOfRepos exceed the max limit for the repository count of organization. Please try with a smaller value")
+    
+    # for avoiding overflows, when input value is greater then number of repositories
     countOfRepos = min(countOfRepos,len(organizationRepositories))
 
     # iterating for each repository
