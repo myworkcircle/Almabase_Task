@@ -70,8 +70,8 @@ Get request for the list of members and their respective activity periods.
      
      Step-2: sudo apt install virtualenv
      
-     # creating virtual environemnt for the project
-     Step-3: $ virtualenv -p python env (or virtualenv -p python3 env , depending on system settings for python)
+     # creating a virtual environment for the project ( python version should be 3.8 )
+     Step-3: $ virtualenv -p python myenv (or virtualenv -p python3 env , depending on system settings for python)
 
      Step-4: run $ pip install -r requirements.txt 
 
