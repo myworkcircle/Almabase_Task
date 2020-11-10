@@ -100,6 +100,10 @@ Get request for the list of members and their respective activity periods.
 
 # API View
 
+Directory for the code for fetching data from github
+
+almabase_api/views.py
+
 Function based API for serving get request.
 
 
